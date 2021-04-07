@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "name": "ett-api",
+      "name": "pausefleur-api",
       "script": "./dist/main.js",
       "log_date_format": "YYYY-MM-DD HH:mm Z",
       "env_development": {
@@ -23,8 +23,8 @@
       "user": "vincent",
       "host": "51.38.32.198",
       "ref": "origin/master",
-      "repo": "git@github.com:VincentLinet/EncourageTonThesard.git",
-      "path": "/home/vincent/sites/encouragetonthesard",
+      "repo": "git@github.com:VincentLinet/PauseFleur.git",
+      "path": "/home/vincent/sites/pausefleur/pausefleur-api",
       "post-deploy": "yarn && cd encourage-ton-thesard-api && yarn build && pm2 startOrRestart ecosystem.json --env production"
     }
   }
