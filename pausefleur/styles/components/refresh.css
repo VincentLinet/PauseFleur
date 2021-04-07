@@ -1,0 +1,37 @@
+.refresh {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  right: 0;
+  bottom: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.refresh__icon {
+  border-radius: 27px;
+  transition: background-color 0.32s ease-in-out;
+}
+
+.refresh__title {
+  width: 210px;
+  font-size: 12px;
+  padding-right: 5px;
+  overflow: hidden;
+}
+
+.refresh__shift {
+  width: 100%;
+  margin-left: 105%;
+  white-space: nowrap;
+  transition: margin 0.32s ease-in-out;
+}
+
+.refresh:hover > .refresh__title > .refresh__shift {
+  margin-left: 0;
+}
+
+.refresh:hover > .refresh__icon {
+  background-color: rgba(255, 255, 255, 0.1);
+}

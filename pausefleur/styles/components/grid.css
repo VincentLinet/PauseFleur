@@ -1,0 +1,18 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  width: 75vw;
+  opacity: 1;
+  transition: opacity 0.32s ease-in-out 0.16s;
+}
+
+.grid.close {
+  opacity: 0;
+  transition: opacity 0.16s ease-in-out;
+}
+
+.row {
+  display: flex;
+  flex: 0 1 25vh;
+}

@@ -1,0 +1,42 @@
+{
+  "name": "encourage-ton-thesard",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.2.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "3.4.0",
+    "@zeit/next-css": "^1.0.1"
+  },
+  "scripts": {
+    "compile": "next build",
+    "build:dev": "REACT_APP_ENV=development yarn compile",
+    "build:production": "REACT_APP_ENV=production yarn compile",
+    "build:uat": "REACT_APP_ENV=uat yarn compile",
+    "build:integration": "REACT_APP_ENV=integration yarn compile",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

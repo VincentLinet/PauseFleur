@@ -1,0 +1,39 @@
+{
+  "name": "ett-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon src/bootstrap.js",
+    "debug": "nodemon --inspect src/bootstrap.js",
+    "start": "node dist/main.js",
+    "build": "webpack",
+    "lint": "eslint 'src/**/*.js' --ignore-pattern node_modules/"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.0",
+    "config": "^3.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.3",
+    "isomorphic-unfetch": "^3.0.0",
+    "mysql": "^2.18.1",
+    "node-cron": "^2.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.6",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

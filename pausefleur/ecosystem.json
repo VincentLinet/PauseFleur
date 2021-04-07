@@ -1,0 +1,31 @@
+{
+  "apps": [
+    {
+      "name": "ett",
+      "script": "yarn start",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "env_development": {
+        "NODE_ENV": "development"
+      },
+      "env_integration": {
+        "NODE_ENV": "integration"
+      },
+      "env_uat": {
+        "NODE_ENV": "uat"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ],
+  "deploy": {
+    "production": {
+      "user": "root",
+      "host": "51.38.32.198",
+      "ref": "origin/master",
+      "repo": "git@github.com:VincentLinet/EncourageTonThesard.git",
+      "path": "/root/sites/encouragetonthesard",
+      "post-deploy": "yarn && cd encouragetonthesard-api && yarn build && pm2 startOrRestart ecosystem.json --env production"
+    }
+  }
+}

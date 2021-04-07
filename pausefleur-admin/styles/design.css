@@ -1,0 +1,8 @@
+@import "./initial/reset.css";
+@import "./initial/fonts.css";
+@import "./initial/app.css";
+
+@import "./components/headbar.css";
+@import "./components/footer.css";
+@import "./components/picture.css";
+@import "./components/list.css";

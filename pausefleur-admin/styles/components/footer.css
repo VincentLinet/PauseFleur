@@ -1,0 +1,61 @@
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  height: 50px;
+  width: 100vw;
+  color: white;
+}
+
+.footer > div {
+  padding: 15px;
+  font-size: 12px;
+}
+
+.footer a {
+  font-weight: 700;
+  padding: 0 3px 0 3px;
+}
+
+.footer > .author {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.footer > .author > .icon {
+  padding: 5px 7px 9px 15px;
+}
+
+.credit {
+  display: flex;
+}
+
+.about-me {
+  position: absolute;
+  bottom: 50px;
+  width: 400px;
+  height: 200px;
+  font-weight: 400;
+  margin-left: 20px;
+  background: url("/picture/bulle.svg") center no-repeat;
+  opacity: 0;
+  transition: opacity 0.32s ease-in-out;
+}
+
+.about-me.open {
+  opacity: 1;
+  transition: opacity 0.16s ease-in-out;
+}
+
+.unsplash {
+  display: flex;
+  align-items: center;
+}
+
+.unsplash > .icon {
+  margin-right: 3px;
+}

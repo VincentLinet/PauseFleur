@@ -1,0 +1,176 @@
+.cheer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff20;
+  width: 50vw;
+  top: 100px;
+  color: white;
+  padding: 30px;
+  -moz-box-shadow: inset 0 0 10px #ffffff50;
+  -webkit-box-shadow: inset 0 0 10px #ffffff50;
+  box-shadow: inset 0 0 10px #ffffff50;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.32s ease-in-out 0.16s;
+}
+
+.cheer.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cheer .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.cheer > p {
+  margin: 0;
+  text-align: justify;
+}
+
+.cheer > * {
+  margin-top: 20px;
+}
+
+.cheer input {
+  padding: 10px;
+  border-radius: 8px;
+  color: #333333;
+  font-weight: bold;
+  background-color: #ffffff80;
+  border: 2px solid transparent;
+  transition: border 0.32s ease-in-out;
+}
+
+.cheer input:focus {
+  border: 2px solid white;
+}
+
+.cheer > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cheer .name {
+  display: flex;
+  align-items: center;
+}
+
+.cheer .name .hint {
+  opacity: 0;
+  padding: 5px;
+  transition: opacity 0.32s ease-in-out;
+}
+
+.name.focused .hint {
+  opacity: 1;
+  transition: opacity 0.16s ease-in-out;
+}
+
+.name .help {
+  opacity: 0;
+  font-size: 10px;
+  width: 120px;
+  line-height: 12px;
+  transition: opacity 0.32s ease-in-out;
+}
+
+.name .help.hovered {
+  opacity: 1;
+  transition: opacity 0.16s ease-in-out;
+}
+
+.cheer .buttons {
+  display: flex;
+}
+
+.cheer .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: 20px;
+  width: 90px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.32s ease-in-out;
+}
+
+.cheer .button:hover {
+  padding: 6px 10px;
+}
+
+.cheer .send {
+  color: #333;
+  background: white;
+}
+
+.cheer .send:hover {
+  color: white;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #383199, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+  cursor: pointer;
+}
+
+.cheer .cancel:hover {
+  background: #f4433680;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}

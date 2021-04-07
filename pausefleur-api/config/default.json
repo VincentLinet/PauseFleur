@@ -1,0 +1,15 @@
+{
+  "app": {
+    "port": 9050
+  },
+  "databases": {
+    "default": {
+      "host": "localhost",
+      "user": "root",
+      "password": "",
+      "database": "ett",
+      "port": 3306,
+      "connectionLimit": 100
+    }
+  }
+}

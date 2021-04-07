@@ -1,0 +1,14 @@
+{
+  "development": {
+    "server": "http://localhost:9050/"
+  },
+  "integration": {
+    "server": "https://encouragetonthesard.fr/"
+  },
+  "uat": {
+    "server": "https://encouragetonthesard.fr/"
+  },
+  "production": {
+    "server": "https://encouragetonthesard.fr/"
+  }
+}

@@ -1,0 +1,9 @@
+.picture {
+  position: absolute;
+  height: 110vh;
+  width: 110vw;
+  background-repeat: no-repeat;
+  background-origin: center;
+  background-size: cover;
+  z-index: -1;
+}
