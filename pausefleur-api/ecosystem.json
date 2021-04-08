@@ -25,7 +25,7 @@
       "ref": "origin/master",
       "repo": "git@github.com:VincentLinet/PauseFleur.git",
       "path": "/home/vincent/sites/pausefleur/pausefleur-api",
-      "post-deploy": "yarn && cd encourage-ton-thesard-api && yarn build && pm2 startOrRestart ecosystem.json --env production"
+      "post-deploy": "yarn && cd pausefleur-api && yarn build && pm2 startOrRestart ecosystem.json --env production"
     }
   }
 }
