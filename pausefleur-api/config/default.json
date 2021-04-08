@@ -7,7 +7,7 @@
       "host": "localhost",
       "user": "root",
       "password": "",
-      "database": "ett",
+      "database": "pausefleur",
       "port": 3306,
       "connectionLimit": 100
     }

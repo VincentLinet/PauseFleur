@@ -5,9 +5,9 @@
   "databases": {
     "default": {
       "host": "localhost",
-      "user": "ett",
-      "password": "ett",
-      "database": "ett",
+      "user": "pausefleur",
+      "password": "pausefleur",
+      "database": "pausefleur",
       "port": 3306,
       "connectionLimit": 100
     }
