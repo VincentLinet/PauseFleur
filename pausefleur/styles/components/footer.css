@@ -32,11 +32,15 @@
   padding: 5px 7px 9px 15px;
 }
 
+.footer > .author > .b {
+  color: #ff80ab;
+}
+
 .credit {
   display: flex;
 }
 
-.about-me {
+.description {
   position: absolute;
   bottom: 50px;
   width: 400px;
@@ -48,7 +52,7 @@
   transition: opacity 0.32s ease-in-out;
 }
 
-.about-me.open {
+.description.open {
   opacity: 1;
   transition: opacity 0.16s ease-in-out;
 }
