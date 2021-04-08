@@ -23,7 +23,6 @@ export const getPicture = async () => {
   if (data.ok === false) return Promise.reject(new Error("error"));
   const info = await data.json();
   const picture = info[Math.floor(Math.random() * Math.floor(info.length))];
-  console.log(picture);
   const { urls, user, color } = picture;
   return info ? { picture: urls.full, credit: user.name, link: user.links.html, color } : DEFAULT;
 };

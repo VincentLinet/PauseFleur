@@ -3,7 +3,7 @@ import cron from "node-cron";
 import { getCache, setCache } from "../services/cache";
 import { getPicture } from "../services/picture";
 import { getMessages } from "../models/message";
-import { getFonts } from "../models/theme";
+import fonts from "../theme/fonts";
 
 export const getDaily = async (req, res, next) => {
   // const theme = getCache("theme");
@@ -19,7 +19,6 @@ export const getNew = async (req, res, next) => {
 const generateTheme = async () => {
   const messages = await getMessages();
   const message = messages[Math.floor(Math.random() * messages.length)];
-  const fonts = await getFonts();
   const font = fonts[Math.floor(Math.random() * fonts.length)];
   const location = Math.floor(Math.random() * 9);
   const picture = await getPicture();
