@@ -20,8 +20,8 @@
   ],
   "deploy": {
     "production": {
-      "user": "vincent",
-      "host": "51.38.32.198",
+      "user": "root",
+      "host": "vps",
       "ref": "origin/master",
       "repo": "git@github.com:VincentLinet/PauseFleur.git",
       "path": "/home/vincent/sites/pausefleur/pausefleur-api",
