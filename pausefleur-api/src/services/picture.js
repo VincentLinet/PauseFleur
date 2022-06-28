@@ -11,8 +11,8 @@ const TARGET = "https://api.unsplash.com/collections/62862929/photos?orientation
 const DEFAULT =
   "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2125&q=80";
 
-export const getPicture = async () => {
-  const data = await fetch(`${TARGET}&page=${Math.floor(Math.random() * 3) + 1}`, {
+export const getPicture = async (target = TARGET) => {
+  const data = await fetch(`${target}&page=${Math.floor(Math.random() * 3) + 1}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json;charset=UTF-8",

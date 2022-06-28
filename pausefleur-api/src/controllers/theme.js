@@ -16,6 +16,12 @@ export const getNew = async (req, res, next) => {
   res.send({ ...theme });
 };
 
+export const getQwack = async (req, res, next) => {
+  const target = "https://api.unsplash.com/collections/MhvVd9DB1Xw/photos";
+  const theme = await generateTheme(target);
+  res.send({ ...theme });
+};
+
 const generateTheme = async () => {
   const messages = await getMessages();
   const message = messages[Math.floor(Math.random() * messages.length)];
